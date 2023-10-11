@@ -31,3 +31,42 @@ Write a function that takes an array of numbers as input,
 and returns the average of those numbers.
  */
 
+function arrayAvg (array) {
+    let sum = 0;
+    array.forEach(number => sum += number);
+    let average = sum / array.length;
+    return average;
+}
+
+console.log(arrayAvg([1,5,4]));
+
+/*
+Exercise 4: Array Filter
+Write a function that takes an array of numbers as input,
+and returns a new array containing only the even numbers from the input array.
+ */
+function arrayFilter (value) {
+    const result = [];
+    for (let i = 0; i < value.length; i++) {
+        if (value[i] % 2 === 0) {
+            result.push(value[i]);
+        }
+    }
+    return result;
+}
+
+const filteredNumbers = arrayFilter([1,2,3,4,5,6,7,8,9,10]);
+console.log(filteredNumbers);
+
+/*
+Exercise 5: Array Reversal
+Write a function that takes an array as input,
+and returns a new array with its elements reversed.
+ */
+function arrayReversal (array2) {
+    const reversed = array2.reverse();
+    return reversed;
+}
+const originalArray = [1,2,3,4,5];
+const reversedArray = arrayReversal(originalArray);
+console.log(reversedArray);
