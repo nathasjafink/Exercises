@@ -70,3 +70,6 @@ function arrayReversal (array2) {
 const originalArray = [1,2,3,4,5];
 const reversedArray = arrayReversal(originalArray);
 console.log(reversedArray);
+const secondArray = [10,11,12,13,14,15];
+const secondReversedArray = arrayReversal(secondArray);
+console.log(secondReversedArray);
