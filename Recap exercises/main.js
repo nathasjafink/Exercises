@@ -74,5 +74,21 @@ const events = [
 ];
 
 function scheduleEvents (events,start) {
+    events.sort((a,b) => a.start - b.start);
 
+    let currentTime = start;
+    events.forEach(event => {
+        event.startTime = currentTime;
+        currentTime += event.duration;
+    });
+
+    const schedule = {};
+    events.forEach(event => {
+        schedule[event.name] = event.startTime;
+    });
+    return schedule;
 }
+
+const start = "9:00";
+const result2 = scheduleEvents(events,start);
+console.log(result2);
