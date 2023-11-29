@@ -92,3 +92,18 @@ function scheduleEvents (events,start) {
 const start = "9:00";
 const result2 = scheduleEvents(events,start);
 console.log(result2);
+
+/*
+Path Finder - level 3
+Objective: Write a function findPath(maze, start, end) that determines a path through a maze.
+Description:
+The Maze: The maze is represented as a 2D array where each element can either be 0 or 1. A 0
+represents an open space where one can move, and a 1 represents a wall which cannot be traversed.
+Start and End Points: The start and end parameters are coordinates in the maze, given as an array of two numbers, [rowIndex, columnIndex].
+Your function should find a path from the start coordinate to the end coordinate.
+Moving Through the Maze: You can move up, down, left, or right, but cannot move diagonally.
+Also, you cannot go outside the bounds of the maze.
+Return Value: The function should return an array of strings, each string being a move: 'up', 'down', 'left', or 'right'.
+This array should represent the sequence of moves that leads from the start to the end point.
+If no path is possible, the function can return an indication of this, like null or an empty array.
+ */
