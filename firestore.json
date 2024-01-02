@@ -1,0 +1,17 @@
+[
+  {
+    "kundeID": 1,
+    "orderID": 1,
+    "produkter": [
+      {
+        "produktID": 3,
+        "antal": 5
+      },
+      {
+        "produktID": 6,
+        "antal": 8
+      }
+    ]
+
+  }
+]
